@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C031F121C656E6B001B538A /* Contsants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C031F111C656E6B001B538A /* Contsants.swift */; };
 		1C8B17A11C620A82008BF857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8B17A01C620A82008BF857 /* AppDelegate.swift */; };
 		1C8B17A31C620A82008BF857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8B17A21C620A82008BF857 /* ViewController.swift */; };
 		1C8B17A61C620A82008BF857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8B17A41C620A82008BF857 /* Main.storyboard */; };
 		1C8B17A91C620A82008BF857 /* myPray.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C8B17A71C620A82008BF857 /* myPray.xcdatamodeld */; };
 		1C8B17AB1C620A82008BF857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8B17AA1C620A82008BF857 /* Assets.xcassets */; };
 		1C8B17AE1C620A82008BF857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8B17AC1C620A82008BF857 /* LaunchScreen.storyboard */; };
+		1C8B17B91C620C11008BF857 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8B17B81C620C11008BF857 /* UserSettings.swift */; };
+		1CCE5EE61C64828500FFDFB7 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE5EE51C64828500FFDFB7 /* Today.swift */; };
+		1CD29BE61C67389A00BE7290 /* StoredPrayers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD29BE41C67389A00BE7290 /* StoredPrayers+CoreDataProperties.swift */; };
+		1CD29BE71C67389A00BE7290 /* StoredPrayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD29BE51C67389A00BE7290 /* StoredPrayers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C031F111C656E6B001B538A /* Contsants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contsants.swift; sourceTree = "<group>"; };
 		1C8B179D1C620A82008BF857 /* myPray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8B17A01C620A82008BF857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C8B17A21C620A82008BF857 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		1C8B17AA1C620A82008BF857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C8B17AD1C620A82008BF857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C8B17AF1C620A82008BF857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8B17B81C620C11008BF857 /* UserSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		1CCE5EE51C64828500FFDFB7 /* Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
+		1CD29BE41C67389A00BE7290 /* StoredPrayers+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "StoredPrayers+CoreDataProperties.swift"; path = "../StoredPrayers+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1CD29BE51C67389A00BE7290 /* StoredPrayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoredPrayers.swift; path = ../StoredPrayers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +66,11 @@
 		1C8B179F1C620A82008BF857 /* myPray */ = {
 			isa = PBXGroup;
 			children = (
+				1C8B17B61C620BB9008BF857 /* Model */,
+				1C8B17B71C620BC1008BF857 /* View */,
+				1C8B17B51C620BAF008BF857 /* Controller */,
 				1C8B17A01C620A82008BF857 /* AppDelegate.swift */,
-				1C8B17A21C620A82008BF857 /* ViewController.swift */,
+				1C8B17B81C620C11008BF857 /* UserSettings.swift */,
 				1C8B17A41C620A82008BF857 /* Main.storyboard */,
 				1C8B17AA1C620A82008BF857 /* Assets.xcassets */,
 				1C8B17AC1C620A82008BF857 /* LaunchScreen.storyboard */,
@@ -65,6 +78,32 @@
 				1C8B17A71C620A82008BF857 /* myPray.xcdatamodeld */,
 			);
 			path = myPray;
+			sourceTree = "<group>";
+		};
+		1C8B17B51C620BAF008BF857 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C8B17A21C620A82008BF857 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1C8B17B61C620BB9008BF857 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CCE5EE51C64828500FFDFB7 /* Today.swift */,
+				1C031F111C656E6B001B538A /* Contsants.swift */,
+				1CD29BE41C67389A00BE7290 /* StoredPrayers+CoreDataProperties.swift */,
+				1CD29BE51C67389A00BE7290 /* StoredPrayers.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1C8B17B71C620BC1008BF857 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C8B17A31C620A82008BF857 /* ViewController.swift in Sources */,
+				1CCE5EE61C64828500FFDFB7 /* Today.swift in Sources */,
+				1C8B17B91C620C11008BF857 /* UserSettings.swift in Sources */,
+				1C031F121C656E6B001B538A /* Contsants.swift in Sources */,
 				1C8B17A11C620A82008BF857 /* AppDelegate.swift in Sources */,
+				1CD29BE71C67389A00BE7290 /* StoredPrayers.swift in Sources */,
+				1CD29BE61C67389A00BE7290 /* StoredPrayers+CoreDataProperties.swift in Sources */,
 				1C8B17A91C620A82008BF857 /* myPray.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +334,7 @@
 				1C8B17B41C620A82008BF857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
