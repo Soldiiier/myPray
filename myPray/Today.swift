@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import CoreData
 
 class Today {
     private var _now: NSDate!
@@ -25,6 +26,7 @@ class Today {
     private var _asr: String!
     private var _maghrib: String!
     private var _isha: String!
+    private var currentImageFileName: String!
     
     var locationManager = CLLocationManager()
     var geocoder = CLGeocoder()
@@ -213,10 +215,6 @@ class Today {
         let asrTimeFullString = dateOnlyFormatter(NSDate()) + " " + asr
         let maghribTimeFullString = dateOnlyFormatter(NSDate()) + " " + maghrib
         let ishaTimeFullString = dateOnlyFormatter(NSDate()) + " " + isha
-
-        print(fajrTimeFullString)
-        print(sunriseTimeFullString)
-        print(ishaTimeFullString)
         
         let fajrTimeUnix = unixFormatter(fajrTimeFullString)
         let sunriseTimeUnix = unixFormatter(sunriseTimeFullString)
@@ -242,7 +240,6 @@ class Today {
         } else {
             return "Problem"
         }
-        
     }
     
     func dateOnlyFormatter(nsDate: NSDate) -> String {
